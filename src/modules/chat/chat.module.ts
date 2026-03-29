@@ -6,6 +6,7 @@ import { ChatService } from './chat.service';
 import { ChatGateway } from './chat.gateway';
 import { IntimacyService } from './intimacy.service';
 import { WalletModule } from '../wallet/wallet.module';
+import { GiftModule } from '../gift/gift.module';
 import { FraudModule } from '../fraud/fraud.module';
 import { VipModule } from '../vip/vip.module';
 import { UploadModule } from '../upload/upload.module';
@@ -13,6 +14,7 @@ import { UploadModule } from '../upload/upload.module';
 @Module({
   imports: [
     WalletModule,
+    GiftModule,
     forwardRef(() => FraudModule),
     VipModule,
     UploadModule,
